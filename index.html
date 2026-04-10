@@ -21,9 +21,8 @@
     <header id="header">
         <div id="button_menu" class="button_menu" data-action="togglesidebar"><img src="./icons/threelines.svg"
                 data-action="togglesidebar"></div>
-
+                
         <div>ATELIER</div>
-
     </header>
 
     <aside id="sidebar" class="sidebar hidden">
@@ -34,7 +33,7 @@
         </ul>
     </aside>
 
-    <main id="app">
+    <main class="page" id="app">
         <div class="gallery" id="gallery"></div>
         <div class="viewer hidden" id="viewer">
             <button id="button_back" style="position:fixed; top:0;left:0;" data-action="viewgallery">Back</button>
@@ -43,7 +42,7 @@
 
         <div class="panel_blanking hidden" id="import">
             <div class="panel_container">
-
+                <button class="close" data-close="#import">X</button>
                 <div class="panel_header">Import Artwork</div>
 
                 <div class="panel_group">
@@ -71,6 +70,8 @@
                 <div class="panel_footer"></div>
             </div>
         </div>"
+
+        <div class="toolbartoggle"><img src="./icons/leftarrow.svg"></div>
     </main>
 
 

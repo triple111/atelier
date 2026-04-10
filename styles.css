@@ -2,6 +2,7 @@
     --main-color: rgb(49, 46, 37);
     --accent-color: rgb(139, 113, 45);
     --bg1-color: rgb(206, 197, 176);
+    --outline-color: rgb(102, 98, 89);
 }
 
 body {
@@ -42,6 +43,7 @@ ul {
 
 /* HEADER-------------------------------------------------------------------------------------------*/
 header {
+    position:relative;
     display: flex;
     justify-content: center;
     /* center horizontally */
@@ -73,6 +75,39 @@ header .button_menu {
 
 header .button_menu:hover {
     background: rgb(223, 213, 190);
+}
+
+
+/* MAIN-------------------------------------------------------------------------------------------*/
+.page{
+    position:relative;
+}
+
+.toolbartoggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height:30px;
+
+    background-color: var(--bg1-color);
+    border-radius: 5px;
+    border: 1px solid var(--outline-color);
+
+}
+
+.toolbartoggle:hover {
+    background: rgb(223, 213, 190);
+}
+
+
+.toolbartoggle img{
+    height:10px;
+    width: 10px;
 }
 
 /* SIDEBAR-------------------------------------------------------------------------------------------*/
