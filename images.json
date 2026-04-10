@@ -1,0 +1,67 @@
+{
+  "images": [
+    {
+      "title": "A Wooded Landscape",
+      "year": "1663",
+      "artist": "Meindert Hobbema",
+      "artist_details": "Dutch, 1638 - 1709",
+      "description": "Meindert Hobbema studied under the noted landscape artist Jacob van Ruisdael, and quite a few of his compositions evolved from the work of his erstwhile master. Hobbema approached nature in a straightforward manner, depicting picturesque, rural scenery enlivened by the presence of peasants or hunters. He often reused favorite motifs such as old watermills, thatch-roofed cottages, and embanked dikes, rearranging them into new compositions. Hobbema’s rolling clouds allow patches of sunshine to illuminate the rutted roads or small streams that lead back into rustic woods. All six of the National Gallery’s canvases by Hobbema share these characteristics.\n\nSigned and dated 1663, A Wooded Landscape is one of Hobbema’s most harmonious compositions. Sunlight breaks through the billowing clouds, but the dense summer foliage provides cooling shade to the people on the road who have stopped to converse and to the angler lounging by the pond. Hobbema draws the viewer back into the forest with pools of light that accent distant foliage and tree trunks. A chalk and ink drawing by Hobbema of this wooded glade seems to indicate that the painting represents an actual location.\n\nIn the 1830s this painting was a prized possession of a benevolent Irish landowner, Charles Cobbe. According to his daughter, Cobbe sold the Hobbema and another painting in 1839 in order to make urgent repairs to tenants’ cottages on the estate. His daughter remembered the tears in her father’s eyes when the paintings were removed from the wall, but, she noted, \"the sacrifice was completed, and eighty good stone and slate ‘Hobbema Cottages,’ as we called them, soon rose all over Glenasmoil.\" Hobbema would have been pleased to know that the sale of his painting created new housing for so many families.",
+      "image": "images/meindert_hobbema__a_wooded_landscape.jpg",
+      "dimensions": {
+        "overall": {
+          "width": 94.7,
+          "height": 130.5
+        }
+      }
+    },
+    {
+      "title": "Pont Neuf, Paris",
+      "year": "1872",
+      "artist": "Auguste Renoir",
+      "artist_details": "French, 1841 - 1919",
+      "description": "While his figure paintings are better known, Renoir's landscapes resonate with a vigor and freshness of vision central to the development of impressionism, most apparent here in his transcription of the effects of sunlight. Midday sun suffuses the panorama, its intensity heightening the artist's palette and suppressing incidental detail to clarify the crowded scene.\n\nEdmond Renoir, the artist's younger brother and a novice journalist in 1872, later recounted the inception of this painting in an interview. He told how Renoir secured an owner's permission to occupy an upper floor of a café for one day to depict the view of the famous bridge. Edmond periodically delayed passersby long enough for the artist to record their appearance. Renoir even noted Edmond's presence, walking stick in hand and straw boater on his head, in two locations.\n\nIf, as Edmond indicated, Pont Neuf, Paris was painted during a single day, it was preceded by careful preparations, possibly including preliminary delineation of the permanent architectural features. The painting seems more richly nuanced and the subject laden with broader meaning than Edmond's anecdote would suggest. Painted in the wake of the Franco–Prussian War and ensuing civil strife that had devastated France in 1870 and 1871, Renoir's 1872 image shows a representative sampling of French citizenry crossing the oldest bridge in Paris, the intact heart of the recovering country.",
+      "image": "images/auguste_renoir__pont_neuf_paris.jpg",
+      "dimensions": {
+        "overall": {
+          "width": 93.7,
+          "height": 75.3
+        },
+        "framed": {
+          "width": 119.38,
+          "height": 99.7,
+          "depth": 20.96
+        }
+      }
+    },
+    {
+      "title": "Lake Lucerne",
+      "year": "1858",
+      "artist": "Albert Bierstadt",
+      "artist_details": "American, 1830 - 1902",
+      "description": "Albert Bierstadt created this scenic view of Lake Lucerne and the Swiss Alps using dozens of sketches he made on-site. Bierstadt, a German immigrant, had returned to his birthplace for training. He traveled through Switzerland on his way back to the United States. Though set in Europe, this breakthrough work would serve as a model for Bierstadt’s equally grand paintings of the Rocky Mountains and Yosemite Valley. He would become one of the most acclaimed landscape painters of the 19th century. The painting disappeared in 1882, after being sold at auction following the death of its original owner. It had been lost for more than 100 years when it was rediscovered in a Rhode Island farmhouse in 1990.",
+      "image": "images/albert_bierstadt__lake_lucerne.jpg",
+      "dimensions": {
+        "overall": {
+          "width": 304.8,
+          "height": 182.9
+        },
+        "framed": {
+          "width": 359.4,
+          "height": 235.3
+        }
+      }
+    },
+    {
+      "title": "Lake Lucerne",
+      "year": "1858",
+      "artist": "Albert Bierstadt",
+      "image": "images/aert_van_der_neer__moonlit_landscape_with_bridge.jpg"
+    },
+    {
+      "title": "Lake Lucerne",
+      "year": "1858",
+      "artist": "Albert Bierstadt",
+      "image": "images/narcisse_virgile_diaz_de_la_pena__in_the_forest.jpg"
+    }
+  ]
+}

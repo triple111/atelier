@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "express": "^5.2.1",
+    "jsdom": "^27.0.1",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^24.40.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

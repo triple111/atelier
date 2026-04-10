@@ -1,0 +1,324 @@
+:root {
+    --main-color: rgb(49, 46, 37);
+    --accent-color: rgb(139, 113, 45);
+    --bg1-color: rgb(206, 197, 176);
+}
+
+body {
+    min-height: 100vh;
+    /* make sure the body covers the full viewport */
+    margin: 0;
+    /* remove default margin */
+
+    /* background gradient */
+    background:
+        radial-gradient(circle at top center,
+            rgba(255, 255, 255, 0.08),
+            rgba(0, 0, 0, 0.5) 100%) no-repeat center center;
+    background-size: cover;
+    /* stretch gradient to cover the whole body */
+
+    background-color: var(--bg1-color);
+    /* fallback base color */
+    color: var(--main-color);
+    font-family: 'EB Garamond', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* HEADER-------------------------------------------------------------------------------------------*/
+header {
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
+    padding: 10px 20px;
+    background: var(--bg1-color);
+    font-size: 2.4rem;
+    min-height: 7vh;
+    border-bottom: 2px solid var(--accent-color);
+    letter-spacing: 0.15em;
+    /* Adjust value as needed */
+}
+
+header img {
+    height: 16px;
+    width: 16px;
+}
+
+header .button_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 1vh;
+}
+
+header .button_menu:hover {
+    background: rgb(223, 213, 190);
+}
+
+/* SIDEBAR-------------------------------------------------------------------------------------------*/
+.sidebar {
+    position: fixed;
+    background-color: rgb(185, 177, 159);
+    width: 20vw;
+    z-index: 10;
+    border: 2px solid rgb(184, 175, 156);
+}
+
+.sidebar li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+
+/* GALLERY-------------------------------------------------------------------------------------------*/
+
+.gallery {
+    margin: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    gap: 10vh;
+
+}
+
+.smallimgcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smallimg {
+
+    max-width: 40vh;
+    /*border stuff*/
+    border-width: 2vh;
+    border-style: solid;
+    border-image-source: url(../emptyframelight.png);
+    border-image-slice: 100;
+    border-image-repeat: repeat;
+
+    /*shadow */
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.4),
+        /* close, more defined shadow */
+        0 20px 50px rgba(0, 0, 0, 0.40);
+    /* soft, diffuse outer shadow */
+}
+
+.smallimg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 5px 20px red;
+    /* inset shadow */
+    pointer-events: none;
+    /* allow clicks through the overlay */
+}
+
+.gallery .caption {
+    width: max-content;
+    max-width: 30vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery .caption h1 {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.gallery .caption h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* VIEWER-------------------------------------------------------------------------------------------*/
+
+.viewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.imagecontainer {
+    position: relative;
+    height: 80vh;
+    border-width: 7vh;
+    border-style: solid;
+    border-image-source: url(emptyframelight.png);
+    border-image-slice: 100;
+    border-image-repeat: repeat;
+    image-rendering: crisp-edges;
+    /* modern standard */
+    image-rendering: pixelated;
+    /* fallback / Chrome, Firefox */
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4),
+        /* close, more defined shadow */
+        0 80px 200px rgba(0, 0, 0, 0.40);
+    /* soft, diffuse outer shadow */
+}
+
+.imagecontainer img {
+    display: block;
+    height: 100%;
+    image-rendering: auto;
+}
+
+/* Inset shadow using ::after */
+.imagecontainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    /* inset shadow */
+    box-shadow:
+        inset 0 1vh 2vh rgba(0, 0, 0, 0.8),
+        /* top-heavy shadow */
+        inset 0 0 1vh rgba(0, 0, 0, 0.3);
+    /* subtle overall inner shadow */
+
+    /* optional rounded corners to match container */
+    border-radius: 0;
+}
+
+.infobox {
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 2vw;
+    z-index: 100;
+    max-width: 15vw;
+    max-height: 50vh;
+    padding: 5vh;
+    background-color: var(--bg1-color);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.05);
+}
+
+.infobox h1 {
+    font-size: 1.1rem;
+    margin: 0px;
+}
+
+/* PANEL-------------------------------------------------------------------------------------------*/
+.panel_blanking {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(2px);
+}
+
+.panel_header {
+    font-family: "EB Garamond", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--bg1-color);
+    font-size: 2em;
+    min-height: 7vh;
+    border-bottom: 2px solid var(--accent-color);
+
+}
+
+.panel_container {
+    font-family: "Open Sans", sans-serif;
+    padding: 50px;
+    width: 50vw;
+    height: 75vh;
+    background-color: var(--bg1-color);
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+}
+
+.panel_footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.panel_group {
+    margin: 2vh 0 2vh 0;
+}
+
+.panel_group label,
+input {
+    display: block;
+}
+
+.panel_row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.panel_boxlabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    border: 2px solid var(--accent-color);
+    background-color: rgb(175, 167, 148);
+
+}
+
+
+.labelbig {
+    font-weight: bold;
+}
+
+.labelsmall {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+/* MISC-------------------------------------------------------------------------------------------*/
+.hidden {
+    display: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- External CSS (optional) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- External JS (optional) -->
+    <script defer src="js/gallery.js" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+<body>
+    <header id="header">
+        <div id="button_menu" class="button_menu" data-action="togglesidebar"><img src="./icons/threelines.svg"
+                data-action="togglesidebar"></div>
+
+        <div>ATELIER</div>
+
+    </header>
+
+    <aside id="sidebar" class="sidebar hidden">
+        <ul>
+            <li><a href="#" data-action="viewgallery">Gallery</a></li>
+            <li><a href="#" data-action="viewimport">Import</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </aside>
+
+    <main id="app">
+        <div class="gallery" id="gallery"></div>
+        <div class="viewer hidden" id="viewer">
+            <button id="button_back" style="position:fixed; top:0;left:0;" data-action="viewgallery">Back</button>
+            <div class="infobox" id="infobox"></div>
+        </div>
+
+        <div class="panel_blanking hidden" id="import">
+            <div class="panel_container">
+
+                <div class="panel_header">Import Artwork</div>
+
+                <div class="panel_group">
+                    <div class="panel_row">
+                        <button data-action="import_nga">NGA</button>
+                        <button>Custom</button>
+                    </div>
+                </div>
+
+                <div id="import_blank" class="panel_group panel_boxlabel">
+                    <label class="labelbig">Select an image source from above</label>
+                </div>
+
+                <div id="import_NGA" class="panel_group  hidden">
+                     <label class="labelbig">URL</label>
+                    <input id="urlInput" type="text">
+                    <label class="labelsmall">Enter url link to the image page</label>
+                    <label class="labelbig">HTML</label>
+                    <input id="htmlInput" type="text">
+                    <label class="labelsmall">Enter raw html of image page (required for NGA)</label>
+                    <button data-action="fetch_nga">Fetch Artwork</button>
+                </div>
+
+                <pre id="output"></pre>
+                <div class="panel_footer"></div>
+            </div>
+        </div>"
+    </main>
+
+
+
+</body>
+
+</html>
