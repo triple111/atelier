@@ -194,6 +194,17 @@ function init() {
 
     hideSidebar();
   });
+
+  //close buttons
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-close]");
+    if (!btn) return;
+
+    const selector = btn.dataset.close;// || ".panel";
+    const target = btn.closest(selector);
+
+    if (target) target.classList.add("hidden"); // or hide
+  });
 }
 
 async function main() {
